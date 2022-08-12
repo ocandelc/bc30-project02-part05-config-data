@@ -16,8 +16,8 @@ spring:
         - id: micro01
           uri: lb://micro01
           predicates:
-            - Path=/afiliado/**
+            - Path=/api/products/**
         - id: micro02
           uri: lb://micro02
           predicates:
-            - Path=/afp/**
+            - Path=/api/products/**
