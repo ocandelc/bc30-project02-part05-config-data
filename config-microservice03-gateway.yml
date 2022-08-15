@@ -20,4 +20,12 @@ spring:
         - id: business-microservice02-client
           uri: lb://business-microservice02-client
           predicates:
-            - Path=/api/products/**
+            - Path=/api/clients/**
+        - id: business-microservice03-operation
+          uri: lb://business-microservice02-operation
+          predicates:
+            - Path=/api/passivesoperations/**
+        - id: business-microservice04-location
+          uri: lb://business-microservice02-location
+          predicates:
+            - Path=/api/locations/**  
