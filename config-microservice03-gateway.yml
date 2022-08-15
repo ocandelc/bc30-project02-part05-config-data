@@ -24,7 +24,7 @@ spring:
         - id: business-microservice03-operation
           uri: lb://business-microservice02-operation
           predicates:
-            - Path=/api/passivesoperations/**
+            - Path=/api/passiveoperations/**
         - id: business-microservice04-location
           uri: lb://business-microservice02-location
           predicates:
