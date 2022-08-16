@@ -17,10 +17,10 @@ spring:
           uri: lb://business-microservice01-product
           predicates:
             - Path=/api/products/**
-        - id: business-microservice02-client
-          uri: lb://business-microservice02-client
+        - id: business-microservice02-customer
+          uri: lb://business-microservice02-customer
           predicates:
-            - Path=/api/clients/**
+            - Path=/api/customers/**
         - id: business-microservice03-operation
           uri: lb://business-microservice02-operation
           predicates:
